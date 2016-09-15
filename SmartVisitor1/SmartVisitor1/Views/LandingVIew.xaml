@@ -2,12 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartVisitor1.Views.LandingVIew">
-  <StackLayout BackgroundColor="White">
-    <Label x:Name="TimeLabel" Text="2:30pm" FontSize="48" />
-    <Label x:Name="DateLabel" Text="20 September 2016" FontSize="24" />
+  <StackLayout Padding="20, 0" BackgroundColor="#DC140B">
+    <Image Source="" ></Image>
+    
+    <Label Margin="20"  x:Name="TimeLabel" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#FFF" Text="2:30pm" FontSize="60" />
+    <Label x:Name="DateLabel" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#FFF" Text="20 September 2016" FontSize="20" />
 
-    <Button Text="START" Clicked="StartButton_OnClicked" >
+    <Button Text="START" BackgroundColor="#2BD300" TextColor="#FFF" FontSize="26" Clicked="StartButton_OnClicked" >
     </Button>
-    <Button Text="SIGNOUT"/>
+    <Button Text="SIGNOUT" BackgroundColor="#DFDFDF" TextColor="#666" FontSize="21"/>
   </StackLayout>
 </ContentPage>

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartVisitor1.Views.VisitorDetailsView">
-  <StackLayout BackgroundColor="White">
+  <StackLayout BackgroundColor="#DC140B">
     <Label x:Name="TimeLabel" Text="2:30pm" FontSize="48" />
     <Label x:Name="DateLabel" Text="20 September 2016" FontSize="24" />
 
