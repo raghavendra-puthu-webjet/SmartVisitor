@@ -30,9 +30,9 @@ namespace SmartVisitor1.Views
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
-        public long PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
 
-        public EmployeeDetail(string firstName, string lastName, string address, long mobileNumber)
+        public EmployeeDetail(string firstName, string lastName, string address, string mobileNumber)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
@@ -50,13 +50,13 @@ namespace SmartVisitor1.Views
         // Dictionary to get Color from color name.
         Dictionary<string, EmployeeDetail> employees = new Dictionary<string, EmployeeDetail>
         {
-            { "Raghavendra Puthu", new EmployeeDetail("Raghavendra", "Puthu", "raghavendra.puthu@webjet.com.au", 0433944255) },
-            { "Vinh Ngo", new EmployeeDetail("Vinh", "Ngo", "vinh.ngo@webjet.com.au", 0403556223) },
-            { "Tammy Helg", new EmployeeDetail("Tammy", "Helg", "Tammy.Helg@webjet.com.au", 0415511471) },
-            { "Thamer AlMerry", new EmployeeDetail("Thamer", "AlMerry", "thamer.almerry@webjet.com.au", 0) },
-            { "Robert Santoro", new EmployeeDetail("Robert", "Santaro", "robert.santaro@webjet.com.au", 0) },
-            { "Shelley Beasley", new EmployeeDetail("Shelly", "Beasley", "shelley.beasley@webjet.com.au", 0407720772)},
-            { "Micheal Sheehy", new EmployeeDetail("Micheal", "Sheehy", "micheal.sheehy@webjet.com.au" , 0412240081) }
+            { "Raghavendra Puthu", new EmployeeDetail("Raghavendra", "Puthu", "raghavendra.puthu@webjet.com.au", "0433944255") },
+            { "Vinh Ngo", new EmployeeDetail("Vinh", "Ngo", "vinh.ngo@webjet.com.au", "0403556223") },
+            { "Tammy Helg", new EmployeeDetail("Tammy", "Helg", "Tammy.Helg@webjet.com.au", "0415511471") },
+            { "Thamer AlMerry", new EmployeeDetail("Thamer", "AlMerry", "thamer.almerry@webjet.com.au", "0") },
+            { "Robert Santoro", new EmployeeDetail("Robert", "Santaro", "robert.santaro@webjet.com.au", "0") },
+            { "Shelley Beasley", new EmployeeDetail("Shelly", "Beasley", "shelley.beasley@webjet.com.au", "0407720772")},
+            { "Micheal Sheehy", new EmployeeDetail("Micheal", "Sheehy", "micheal.sheehy@webjet.com.au" , "0412240081") }
         };
 
         public Employee()
@@ -134,10 +134,11 @@ namespace SmartVisitor1.Views
 
         void OnSubmitButtonClicked(object sender, EventArgs e)
         {
-            RunAsync();
+            var success = RunAsync();
+            Navigation.PushAsync(new ConfirmationView());
         }
 
-        async Task RunAsync()
+        async Task<Boolean> RunAsync()
         {
             using (var client = new HttpClient())
             {
@@ -157,7 +158,14 @@ namespace SmartVisitor1.Views
                 var response = await client.PostAsync("http://smartvisitorbackend.azurewebsites.net/api/register",
                     new StringContent(str, Encoding.UTF8, "text/json"));
 
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+
             }
+
+            return false;
         }
     }
 }

@@ -8,7 +8,7 @@
 
     <StackLayout Padding="20, 0, 0, 20">
       <Label Margin="3, 0, 0, 0" Text="THANK YOU!" TextColor="#333" FontSize="30" />
-      <Label Margin="3, 0, 0, 0" Text="Mr. Visitor" TextColor="#333" FontSize="15" />
+      <Label x:Name="VisitorName" Margin="3, 0, 0, 0" Text="Mr. Visitor" TextColor="#333" FontSize="15" />
     </StackLayout>
 
     <StackLayout Padding="20, 0, 0, 20">
