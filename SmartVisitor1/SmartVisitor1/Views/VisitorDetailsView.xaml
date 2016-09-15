@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartVisitor1.Views.VisitorDetailsView">
+  <StackLayout BackgroundColor="White">
+    <Label x:Name="TimeLabel" Text="2:30pm" FontSize="48" />
+    <Label x:Name="DateLabel" Text="20 September 2016" FontSize="24" />
+
+    <StackLayout >
+      <Label Text="First Name" FontSize="12" />
+      <Entry x:Name="FirstNameEntry" Placeholder="Type here" FontSize="24" />
+    </StackLayout>
+
+    <StackLayout >
+      <Label Text="Last Name" FontSize="12" />
+      <Entry FontSize="24" Placeholder="Type here" />
+    </StackLayout>
+
+    <StackLayout >
+      <Label Text="Company" FontSize="12" />
+      <Entry FontSize="24" Placeholder="Type here" />
+    </StackLayout>
+    
+    <Button Text="NEXT" Clicked="Button_OnClicked"/>
+  </StackLayout>
+</ContentPage>
