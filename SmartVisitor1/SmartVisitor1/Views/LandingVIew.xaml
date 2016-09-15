@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartVisitor1.Views.LandingVIew">
   <StackLayout Padding="20, 0" BackgroundColor="#DC140B">
-    <Image Source="" ></Image>
+    <Image Source="wjsmartvisitorlogo.png" ></Image>
     
-    <Label Margin="20"  x:Name="TimeLabel" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#FFF" Text="2:30pm" FontSize="60" />
+    <Label x:Name="TimeLabel" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#FFF" Text="2:30pm" FontSize="60" />
     <Label x:Name="DateLabel" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#FFF" Text="20 September 2016" FontSize="20" />
 
-    <Button Text="START" BackgroundColor="#2BD300" TextColor="#FFF" FontSize="26" Clicked="StartButton_OnClicked" >
+    <Button Margin="0, 25, 0 , 10" Text="START" BackgroundColor="#2BD300" TextColor="#FFF" FontSize="26" Clicked="StartButton_OnClicked" >
     </Button>
     <Button Text="SIGNOUT" BackgroundColor="#DFDFDF" TextColor="#666" FontSize="21"/>
   </StackLayout>
