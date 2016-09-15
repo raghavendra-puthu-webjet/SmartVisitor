@@ -18,9 +18,13 @@ namespace SmartVisitor1.Views
             TimeLabel.Text = DateTime.Now.ToString("hh:mm");
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
+        private void NextButton_OnClicked(object sender, EventArgs e)
         {
             App.FirstName = FirstNameEntry.Text;
+            App.LastName = LastNameEntry.Text;
+            App.Company = CompanyEntry.Text;
+
+            Navigation.PushAsync(new Employee());
         }
     }
 }

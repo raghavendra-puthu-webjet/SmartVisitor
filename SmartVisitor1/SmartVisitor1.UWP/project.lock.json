@@ -1,9 +1,10 @@
 {
   "locked": false,
-  "version": 1,
+  "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
       "Xamarin.Forms/2.0.0.6482": {
+        "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -20,6 +21,7 @@
     },
     "UAP,Version=v10.0/win10-arm": {
       "Xamarin.Forms/2.0.0.6482": {
+        "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -36,6 +38,7 @@
     },
     "UAP,Version=v10.0/win10-arm-aot": {
       "Xamarin.Forms/2.0.0.6482": {
+        "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -52,6 +55,7 @@
     },
     "UAP,Version=v10.0/win10-x64": {
       "Xamarin.Forms/2.0.0.6482": {
+        "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -68,6 +72,7 @@
     },
     "UAP,Version=v10.0/win10-x64-aot": {
       "Xamarin.Forms/2.0.0.6482": {
+        "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -84,6 +89,7 @@
     },
     "UAP,Version=v10.0/win10-x86": {
       "Xamarin.Forms/2.0.0.6482": {
+        "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -100,6 +106,7 @@
     },
     "UAP,Version=v10.0/win10-x86-aot": {
       "Xamarin.Forms/2.0.0.6482": {
+        "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},

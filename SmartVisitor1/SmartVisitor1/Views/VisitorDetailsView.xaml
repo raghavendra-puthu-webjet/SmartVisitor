@@ -6,17 +6,17 @@
     <Label HorizontalOptions="Center" TextColor="#333" x:Name="TimeLabel" Text="2:30pm" FontSize="30" />
     <Label Margin="5, -8, 0, 10" HorizontalOptions="Center" TextColor="#333" x:Name="DateLabel" Text="20 September 2016" FontSize="12" />
 
-    <StackLayout >
+    <StackLayout Padding="20, 0, 0, 20">
       <Label Margin="3, 0, 0, 0" Text="First Name" TextColor="#333" FontSize="15" />
       <Entry x:Name="FirstNameEntry" BackgroundColor="#f2f2f2" PlaceholderColor="#9B9B9B" TextColor="#9B9B9B" FontSize="24" Placeholder="Walter" />
     </StackLayout>
 
-    <StackLayout >
+    <StackLayout Padding="20, 0, 0, 20">
       <Label Margin="3, 0, 0, 0" Text="Last Name" TextColor="#333" FontSize="15" />
       <Entry FontSize="24" BackgroundColor="#f2f2f2" PlaceholderColor="#9B9B9B" TextColor="#9B9B9B"  Placeholder="White" />
     </StackLayout>
 
-    <StackLayout >
+    <StackLayout Padding="20, 0, 0, 20">
       <Label Margin="3, 0, 0, 0" Text="Company" TextColor="#333" FontSize="15" />
       <Entry FontSize="24" BackgroundColor="#f2f2f2" PlaceholderColor="#9B9B9B" TextColor="#9B9B9B"  Placeholder="Los Pollos Hermanos" />
     </StackLayout>
