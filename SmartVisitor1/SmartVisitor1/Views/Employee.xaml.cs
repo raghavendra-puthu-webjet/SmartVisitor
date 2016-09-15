@@ -51,10 +51,12 @@ namespace SmartVisitor1.Views
         Dictionary<string, EmployeeDetail> employees = new Dictionary<string, EmployeeDetail>
         {
             { "Raghavendra Puthu", new EmployeeDetail("Raghavendra", "Puthu", "raghavendra.puthu@webjet.com.au", 0433944255) },
-            { "Vinh Ngo", new EmployeeDetail("Vinh", "Ngo", "vinh.ngo@webjet.com.au", 1) },
-            { "Tammy Helg", new EmployeeDetail() },
-            { "Thamer AlMerry", new EmployeeDetail() },
-            { "Robert Santoro", new EmployeeDetail() }
+            { "Vinh Ngo", new EmployeeDetail("Vinh", "Ngo", "vinh.ngo@webjet.com.au", 0403556223) },
+            { "Tammy Helg", new EmployeeDetail("Tammy", "Helg", "Tammy.Helg@webjet.com.au", 0415511471) },
+            { "Thamer AlMerry", new EmployeeDetail("Thamer", "AlMerry", "thamer.almerry@webjet.com.au", 0) },
+            { "Robert Santoro", new EmployeeDetail("Robert", "Santaro", "robert.santaro@webjet.com.au", 0) },
+            { "Shelley Beasley", new EmployeeDetail("Shelly", "Beasley", "shelley.beasley@webjet.com.au", 0407720772)},
+            { "Micheal Sheehy", new EmployeeDetail("Micheal", "Sheehy", "micheal.sheehy@webjet.com.au" , 0412240081) }
         };
 
         public Employee()
@@ -62,13 +64,15 @@ namespace SmartVisitor1.Views
             Label header = new Label()
             {
                 Text = "Who are you meeting with?",
-                FontSize = 12
+                FontSize = 15,
+                TextColor = Color.Black
             };
 
             Picker picker = new Picker
             {
                 Title = "Choose an employee",
-                VerticalOptions = LayoutOptions.CenterAndExpand
+                VerticalOptions = LayoutOptions.Start,
+                BackgroundColor = Color.Gray
             };
 
             foreach (string colorName in employees.Keys)
@@ -103,7 +107,11 @@ namespace SmartVisitor1.Views
             Button submitButton = new Button()
             {
                 Text = "SUBMIT",
-                HorizontalOptions = LayoutOptions.Center
+                HorizontalOptions = LayoutOptions.Center,
+                BackgroundColor = Color.Green,
+                TextColor = Color.White,
+                FontSize = 21,
+
             };
             submitButton.Clicked += OnSubmitButtonClicked;
 
@@ -113,11 +121,11 @@ namespace SmartVisitor1.Views
             // Build the page.
             this.Content = new StackLayout
             {
+                BackgroundColor = Color.White,
                 Children =
                 {
                     header,
                     picker,
-                    boxView,
                     submitButton
                 }
             };
