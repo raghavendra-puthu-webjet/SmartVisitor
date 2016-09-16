@@ -13,7 +13,7 @@ namespace SmartVisitor1.Views
         public VisitorDetailsView()
         {
             InitializeComponent();
-
+            Title = "Your info";
             DateLabel.Text = DateTime.Now.Date.ToString("dd MMMM yyyy");
             TimeLabel.Text = DateTime.Now.ToString("hh:mm");
         }

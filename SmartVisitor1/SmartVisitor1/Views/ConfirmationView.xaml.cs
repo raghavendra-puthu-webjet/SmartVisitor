@@ -13,6 +13,7 @@ namespace SmartVisitor1.Views
         public ConfirmationView()
         {
             InitializeComponent();
+            Title = "FINISH";
 
             //VisitorName
         }

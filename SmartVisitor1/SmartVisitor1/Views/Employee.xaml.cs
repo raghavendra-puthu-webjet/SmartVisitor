@@ -61,6 +61,7 @@ namespace SmartVisitor1.Views
 
         public Employee()
         {
+            Title = "EMPLOYEE";
             Label header = new Label()
             {
                 Text = "Who are you meeting with?",
