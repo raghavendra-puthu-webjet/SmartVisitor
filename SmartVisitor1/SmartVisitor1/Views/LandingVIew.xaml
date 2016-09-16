@@ -10,6 +10,6 @@
 
     <Button Margin="0, 25, 0 , 10" Text="START" BackgroundColor="#2BD300" TextColor="#FFF" FontSize="26" Clicked="StartButton_OnClicked" >
     </Button>
-    <Button Text="SIGNOUT" BackgroundColor="#DFDFDF" TextColor="#666" FontSize="21"/>
+    <Button Text="SIGNOUT" BackgroundColor="#DFDFDF" TextColor="#666" FontSize="21" Clicked="EndButton_OnClicked" />
   </StackLayout>
 </ContentPage>

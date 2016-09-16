@@ -23,5 +23,10 @@ namespace SmartVisitor1.Views
         {
             Navigation.PushAsync(new VisitorDetailsView());
         }
+
+        private void EndButton_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SignoutView());
+        }
     }
 }

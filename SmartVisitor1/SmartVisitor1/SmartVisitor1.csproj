@@ -46,6 +46,9 @@
     <Compile Include="Views\LandingVIew.xaml.cs">
       <DependentUpon>LandingVIew.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SignoutView.xaml.cs">
+      <DependentUpon>SignoutView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\VisitorDetailsView.xaml.cs">
       <DependentUpon>VisitorDetailsView.xaml</DependentUpon>
     </Compile>
@@ -92,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\ConfirmationView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SignoutView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
