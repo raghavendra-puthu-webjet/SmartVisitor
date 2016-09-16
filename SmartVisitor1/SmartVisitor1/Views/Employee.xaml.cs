@@ -110,7 +110,6 @@ namespace SmartVisitor1.Views
                 FontSize = 21,
                 BackgroundColor = Color.FromHex("#2DB300"),
                 TextColor = Color.White,
-                FontSize = 21,
 
             };
             submitButton.Clicked += OnSubmitButtonClicked;
