@@ -65,14 +65,14 @@ namespace SmartVisitor1.Views
             {
                 Text = "Who are you meeting with?",
                 FontSize = 15,
-                TextColor = Color.Black
+                TextColor = Color.FromHex("#333"),
             };
 
             Picker picker = new Picker
             {
                 Title = "Choose an employee",
-                VerticalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray
+                TextColor = Color.FromHex("#9B9B9B"),
+                BackgroundColor = Color.FromHex("#F2F2F2"),
             };
 
             foreach (string colorName in employees.Keys)
@@ -107,8 +107,8 @@ namespace SmartVisitor1.Views
             Button submitButton = new Button()
             {
                 Text = "SUBMIT",
-                HorizontalOptions = LayoutOptions.Center,
-                BackgroundColor = Color.Green,
+                FontSize = 21,
+                BackgroundColor = Color.FromHex("#2DB300"),
                 TextColor = Color.White,
                 FontSize = 21,
 
@@ -116,12 +116,13 @@ namespace SmartVisitor1.Views
             submitButton.Clicked += OnSubmitButtonClicked;
 
             // Accomodate iPhone status bar.
-            this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
+            //this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
 
             // Build the page.
             this.Content = new StackLayout
             {
-                BackgroundColor = Color.White,
+                BackgroundColor=Color.White,
+                Padding=20,
                 Children =
                 {
                     header,
