@@ -13,11 +13,10 @@ namespace SmartVisitor1.Views
         public LandingVIew()
         {
             InitializeComponent();
-
+            Title = "Welcome to Smart Visitor";
             DateLabel.Text = DateTime.Now.Date.ToString("dd MMMM yyyy");
             TimeLabel.Text = DateTime.Now.ToString("hh:mm");
         }
-
 
         private void StartButton_OnClicked(object sender, EventArgs e)
         {

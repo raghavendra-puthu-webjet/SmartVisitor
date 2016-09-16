@@ -16,7 +16,11 @@ namespace SmartVisitor1
         public App()
         {
             // The root page of your application
-            MainPage = new NavigationPage(new LandingVIew());
+            MainPage = new NavigationPage(new LandingVIew())
+            {
+                BarBackgroundColor = Color.Red,
+                BarTextColor = Color.White
+            };
         }
 
         protected override void OnStart()
